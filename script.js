@@ -10,7 +10,6 @@ const firebaseConfig = {
   databaseURL: "https://rockpaper-c307a-default-rtdb.firebaseio.com",
 
   projectId: "rockpaper-c307a",
-
   storageBucket: "rockpaper-c307a.appspot.com",
 
   messagingSenderId: "809194481630",
