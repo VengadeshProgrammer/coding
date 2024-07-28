@@ -18,8 +18,8 @@ import {set, getDatabase, ref, child, get} from "https://www.gstatic.com/firebas
 
 const db = getDatabase();
 const dbRef = ref(db);
-
-// Get references to email and password input elements
+document.querySelector(".enter").addEventListener("click", ()=>{
+ // Get references to email and password input elements
 var x = document.querySelector(".email");
 var y = document.querySelector(".password");
 
@@ -32,3 +32,5 @@ set(ref(db, "users/" + x.value), {
   password: y.value,
 });
 
+
+})
