@@ -22,7 +22,6 @@ const firebaseConfig = {
 };
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
-
 const db = getDatabase();
 const dbRef = ref(db);
         var email = document.querySelector(".email");
