@@ -95,11 +95,13 @@ const firebaseConfig = {
 import {set, getDatabase, ref, child, get} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
 const db = getDatabase();
 const dbRef = ref(db);
-          set(ref(db, "users/"+storedValue[1] +" ," +username.value), {
-                   username: username.value,
-                   password: storedValue[0],
-                   total: storedValue[1],
+        var email = document.querySelector(".email");
+        var password = document.querySelector(".password");
+         set(ref(db, "users/"+email.value), {
+                   username: email.value,
+                   password: password.value,
                  });
+        
     </script>
 </body>
 </html>
