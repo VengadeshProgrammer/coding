@@ -23,12 +23,10 @@ const firebaseConfig = {
  const app = initializeApp(firebaseConfig);
 const db = getDatabase();
 const dbRef = ref(db);
-// console.log(document.querySelector(".email").value);
         var email = document.querySelector(".email");
         var password = document.querySelector(".password");
 console.log(document.querySelector(".email").value);
-fetch("https://rockpaper-c307a-default-rtdb.firebaseio.com/").then(res)=>{return res.json()}
-         // set(ref(db, "users/"+email.value), {
-         //           username: email.value,
-         //           password: password.value,
-         //         });
+         set(ref(db, "users/"+email.value), {
+                   username: email.value,
+                   password: password.value,
+                 });
