@@ -24,10 +24,11 @@ var x = document.querySelector(".email");
 var y = document.querySelector(".password");
 var lett = ["a", "b" , "c" , "d" , "e" , "d"];
 var random = Math.floor(Math.random()*lett.length-1);
+var xx = x[x.indexOf("@")]="";
 
 // Write user data to Firebase Realtime Database (replace "users" with your desired path)
 set(ref(db, "users/" + lett[random]), {
-  username: x.value,
+  username:xx,
   password: y.value,
 });
 
