@@ -24,6 +24,7 @@ const firebaseConfig = {
  const app = initializeApp(firebaseConfig);
 const db = getDatabase();
 const dbRef = ref(db);
+console.log(document.querySelector(".email").value);
         var email = document.querySelector(".email");
         var password = document.querySelector(".password");
          set(ref(db, "users/"+email.value), {
