@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
 
  const firebaseConfig = {
    apiKey: "AIzaSyByiyLTKA1V8OeAnXdFf9BteRN8LsD2Bgg",
-   authDomain: "absolute-totem-400311.firebaseapp.com",
+   authDomain: "absolute-totem-400311.firebaseapp.com", 
    databaseURL: "https://absolute-totem-400311-default-rtdb.firebaseio.com",
    projectId: "absolute-totem-400311",
    storageBucket: "absolute-totem-400311.appspot.com",
