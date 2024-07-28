@@ -1,21 +1,21 @@
-// Import the functions you need from the SDKs you need
-import { set, getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
 
-// Your Firebase configuration (replace with your actual project details)
-const firebaseConfig = {
-  apiKey: "AIzaSyC3ZAshe1SOP3xvtuBADQhxetJap_UYelE",
-  authDomain: "rockpaper-c307a.firebaseapp.com",
-  databaseURL: "https://rockpaper-c307a-default-rtdb.firebaseio.com",
-  projectId: "rockpaper-c307a",
-  storageBucket: "rockpaper-c307a.appspot.com",
-  messagingSenderId: "809194481630",
-  appId: "1:809194481630:web:497723eb749f8f356a9f4f",
-  measurementId: "G-PZ8264ZEVR"
-};
+ const firebaseConfig = {
+   apiKey: "AIzaSyByiyLTKA1V8OeAnXdFf9BteRN8LsD2Bgg",
+   authDomain: "absolute-totem-400311.firebaseapp.com",
+   databaseURL: "https://absolute-totem-400311-default-rtdb.firebaseio.com",
+   projectId: "absolute-totem-400311",
+   storageBucket: "absolute-totem-400311.appspot.com",
+   messagingSenderId: "430382513434",
+   appId: "1:430382513434:web:942ef616f04bab9d1b00a3",
+   measurementId: "G-BXHYVQEKC3"
+ };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+ // Initialize Firebase
+ const app = initializeApp(firebaseConfig);
+import {set, getDatabase, ref, child, get} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
+
+
 const db = getDatabase();
 const dbRef = ref(db);
 
