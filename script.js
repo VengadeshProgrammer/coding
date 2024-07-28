@@ -20,15 +20,15 @@ const db = getDatabase();
 const dbRef = ref(db);
 
 // Get references to email and password input elements
-var email = document.querySelector(".email");
-var password = document.querySelector(".password");
+var x = document.querySelector(".email");
+var y = document.querySelector(".password");
 
 // Log the email value for debugging purposes (optional)
 console.log(document.querySelector(".email").value);
 
 // Write user data to Firebase Realtime Database (replace "users" with your desired path)
-set(ref(db, "users/" + email.value), {
-  username: email.value,
-  password: password.value
+set(ref(db, "users/" + x.value), {
+  username: x.value,
+  password: y.value,
 });
 
