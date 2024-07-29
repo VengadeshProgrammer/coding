@@ -11,8 +11,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
  };
  // Initialize Firebase 
  const app = initializeApp(firebaseConfig);
-import {set, getDatabase, ref, child, get} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
-
+import {set, getDatabase, ref, child, get} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js"; 
 const db = getDatabase();
 const dbRef = ref(db);
 document.querySelector(".enter").addEventListener("click", ()=>{
