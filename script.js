@@ -9,7 +9,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
    appId: "1:430382513434:web:942ef616f04bab9d1b00a3",
    measurementId: "G-BXHYVQEKC3"
  };
-
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
 import {set, getDatabase, ref, child, get} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
