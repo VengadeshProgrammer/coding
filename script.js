@@ -6,7 +6,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
    projectId: "absolute-totem-400311",
    storageBucket: "absolute-totem-400311.appspot.com",
    messagingSenderId: "430382513434",
-   appId: "1:430382513434:web:942ef616f04bab9d1b00a3",
+   appId: "1:430382513434:web:942ef616f04bab9d1b00a3", 
    measurementId: "G-BXHYVQEKC3"   
  };
  // Initialize Firebase 
