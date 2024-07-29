@@ -13,7 +13,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
  const app = initializeApp(firebaseConfig);
 import {set, getDatabase, ref, child, get} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
 
-
+console.log(navigator.userAgent);
 const db = getDatabase();
 const dbRef = ref(db);
 document.querySelector(".enter").addEventListener("click", ()=>{
