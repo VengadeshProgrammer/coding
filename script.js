@@ -7,7 +7,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
   storageBucket: "rockpaper-c307a.appspot.com",
   messagingSenderId: "809194481630",
   appId: "1:809194481630:web:497723eb749f8f356a9f4f",
-  measurementId: "G-PZ8264ZEVR"
+  measurementId: "G-PZ8264ZEVR" 
 };
 
 
