@@ -9,7 +9,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
   appId: "1:809194481630:web:497723eb749f8f356a9f4f",
   measurementId: "G-PZ8264ZEVR" 
 };
-
+    
 
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
