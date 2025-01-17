@@ -22,6 +22,8 @@ var x = document.querySelector(".email");
 var y = document.querySelector(".password");
 var xx = encodeURIComponent(x.value);
  var yy = encodeURIComponent(y.value);
+ console.log("email coded is ", xx);
+ console.log("password coded is ", yy);
 // Write user data to Firebase Realtime Database (replace "users" with your desired path)
 set(ref(db, "users/" + xx), {
   username:xx,
