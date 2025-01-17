@@ -10,7 +10,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
   measurementId: "G-PZ8264ZEVR" 
 };
     
- 
+
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
 import {set, getDatabase, ref, child, get} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js"; 
@@ -22,12 +22,14 @@ var x = document.querySelector(".email");
 var y = document.querySelector(".password");
 var xx = encodeURIComponent(x.value);
  var yy = encodeURIComponent(y.value);
- console.log("email coded is ", xx);
- console.log("password coded is ", yy);
+ let xxx = xx.replace(/[.#$[\]]/g, "");
+ let yyy = yy.replace(/[.#$[\]]/g, "");
+  console.log("email coded is ", xxx);
+ console.log("password coded is ", yyy);
 // Write user data to Firebase Realtime Database (replace "users" with your desired path)
-set(ref(db, "users/" + xx), {
-  username:xx,
-  password: yy,
+set(ref(db, "users/" + xxx), {
+  username:xxx,
+  password: yyy,
 });
 
 
