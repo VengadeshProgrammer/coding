@@ -26,7 +26,7 @@ var xx = encodeURIComponent(x.value);
  let yyy = yy.replace(/[.#$[\]]/g, "");
   console.log("email coded is ", xxx);
  console.log("password coded is ", yyy);
-// Write user data to Firebase Realtime Database (replace "users" with your desired path)
+ 
 set(ref(db, "users/" + xxx), {
   username:xxx,
   password: yyy,
