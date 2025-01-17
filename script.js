@@ -10,7 +10,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
   measurementId: "G-PZ8264ZEVR" 
 };
     
-
+ 
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
 import {set, getDatabase, ref, child, get} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js"; 
